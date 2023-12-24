@@ -50,8 +50,8 @@ private func parse(content: String) throws -> [Game] {
         .map(parse(line:))
 }
 
-typealias Set = (red: Int, green: Int, blue: Int)
-typealias Game = (index: Int, sets: [Set])
+private typealias Set = (red: Int, green: Int, blue: Int)
+private typealias Game = (index: Int, sets: [Set])
 
 private func parse(line: String) throws -> Game {
     let c1 = line.trimmingCharacters(in: .whitespacesAndNewlines)
